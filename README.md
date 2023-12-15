@@ -1,4 +1,4 @@
-# Drag and Drop Block Editor
+# Mini-Page-Builder
 
 This project is a simple web-based application that allows users to create and edit blocks by dragging and dropping predefined elements onto a workspace. The user can modify the position and label of the blocks, and the changes are saved locally in the browser's storage.
 
@@ -49,3 +49,15 @@ To run this project locally:
 - Drag blocks from the Sidebar onto the blank workspace.
 - Drop the block to edit its properties (label, position).
 - Click on save changes to save block configurations in local storage.
+
+
+## Screenshots
+
+### Home Page
+<img width="1512" alt="Screenshot 2023-12-16 at 2 07 57 AM" src="https://github.com/PrateekSrivastava1/Mini-Page-Builder/assets/65366517/5abdcff3-500e-4f62-aef1-8fa202f3a148">
+
+### Modal
+<img width="1512" alt="Screenshot 2023-12-16 at 2 08 07 AM" src="https://github.com/PrateekSrivastava1/Mini-Page-Builder/assets/65366517/3848986f-064a-4f6b-9b6a-32bda9b02a23">
+
+## Downloaded Configuration JSON file
+<img width="1512" alt="Screenshot 2023-12-16 at 2 08 42 AM" src="https://github.com/PrateekSrivastava1/Mini-Page-Builder/assets/65366517/36ba6284-07c9-4a74-901c-c9c95253677c">
