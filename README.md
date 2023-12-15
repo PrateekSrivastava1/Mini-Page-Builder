@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Drag and Drop Block Editor
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple web-based application that allows users to create and edit blocks by dragging and dropping predefined elements onto a workspace. The user can modify the position and label of the blocks, and the changes are saved locally in the browser's storage.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Drag and drop functionality: Users can drag predefined blocks (Label, Input, Button) onto the workspace.
+- Block customization: Users can modify the label and position of each block by clicking and editing their properties.
+- Local storage: Blocks and their configurations are saved in the browser's local storage, persisting across sessions.
+- Download configurations: Users can download the current block configurations as a JSON file.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React: The project is built using React, a JavaScript library for building user interfaces.
+- HTML/CSS/Tailwind: Used for structuring the web page and styling the components.
+- Local Storage API: Used to store and retrieve block configurations locally in the browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Structure
 
-### `npm test`
+The project consists of the following main components:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### DragAndDropPage Component
 
-### `npm run build`
+This component represents the workspace where blocks can be dragged and dropped. It displays the blocks and handles their positioning.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Sidebar Component
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The Sidebar contains a list of predefined blocks (Label, Input, Button) that users can drag onto the workspace. It also includes a button to download the current block configurations.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Modal Component
 
-### `npm run eject`
+The Modal is used for editing block configurations. It appears when a block is dropped onto the workspace or when a block is selected for editing.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### App Component
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The main component that integrates the DragAndDropPage, Sidebar, and Modal components. It manages the state of the blocks, handles drag-and-drop events, and controls the display of the Modal.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Getting Started
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To run this project locally:
 
-## Learn More
+1. Clone this repository `git@github.com:PrateekSrivastava1/Mini-Page-Builder.git`.
+2. Navigate to the project directory `cd Mini-Page-Builder`
+3. Install dependencies using `npm install`.
+4. Start the development server using `npm start`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## How to Use
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Drag blocks from the Sidebar onto the blank workspace.
+- Drop the block to edit its properties (label, position).
+- Click on save changes to save block configurations in local storage.
